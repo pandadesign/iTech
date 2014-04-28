@@ -1,0 +1,16 @@
+// size mixins
+@mixin size($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin minWidth($width, $minWidth: 0) {
+	width: $width;
+	min-width: $minWdth;
+}
+
+@mixin minSize($width, $height, $minWidth: 0) {
+	width: $width;
+	height: $height;
+	min-width: $minWidth;
+}

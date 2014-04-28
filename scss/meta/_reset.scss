@@ -1,0 +1,26 @@
+* {
+	box-sizing: border-box; /* Поля включаются в ширину блока */
+	-moz-box-sizing: border-box; /* Для мозилы */
+	-wekbit-box-sizing: border-box; /* Для мобильныъ устройств */
+}
+h1, h2, h3, h4, h5, h6, p, body, ul, figure {
+	margin: 0; /* Полный ресет отступов */
+	padding: 0; 
+}
+a, img {
+	outline: none; /* убираем аутлайн для IE */
+	border: none; /* Убираем бордер для IE */
+}
+a {
+	text-decoration: none; /* Убираем текст-декорэтион для линков */
+}
+ul {
+	list-style: none;  /* Убираем list-style для списков */
+}
+body {
+	font: 12px 'Arial', Calibri, sans-serif;
+}
+body, html {
+	height: 100%;
+	width: 100%;
+}
