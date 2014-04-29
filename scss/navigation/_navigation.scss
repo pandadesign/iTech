@@ -40,11 +40,16 @@
 	&:hover,
 	&:focus,
 	&:active {
+		overflow: visible;
 
 		.dropdown {
 			left: 0;
 			top: 75px;
 			opacity: 1;
+		}
+
+		&:after {
+			top: 60px;
 		}
 
 	}
@@ -53,8 +58,8 @@
 		content: '';
 		position: absolute;
 		left: 0;
-		top: 60px;
-		@include size(480px, 15px);
+		top: 35px;
+		@include size(480px, 25px);
 		background-color: transparent;
 	}
 
@@ -180,6 +185,10 @@
 	@include size(50%, 100%);
 	float: left;
 	padding: 15px 0 0 20px;
+}
+
+.dropdown-item {
+	display: block;
 }
 
 .dropdown-link {
