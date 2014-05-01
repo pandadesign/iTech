@@ -1,0 +1,70 @@
+.info {
+	background-color: $headerBg;
+	border-top: 3px solid $headerSeparator;
+	@include minWidth(100%, 960px);
+}
+
+.info-list {
+	@include wrapper();
+	overflow: auto;
+	padding: 20px 0;
+	color: $headerText;
+}
+
+.info-item {
+	@include size(25%, 60px);
+	float: left;
+	border-right: 1px solid #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&:last-child {
+		border-right: none;
+	}
+}
+
+.info-number {
+	color: $headerText;
+	font-size: $fSize + 4px;
+}
+
+// child
+
+.logo {
+	text-indent: -9999px;
+	@include size(153px, 60px);
+	background: url(../img/logo.png) no-repeat;
+	background-size: cover;
+}
+
+.info-basket {
+	color: $headerText;
+	font-size: $fSize + 4px;
+}
+
+.info-item__basket {
+	transform: translateY(-3px);
+}
+
+.info-action__basket {
+	align-self: center;
+}
+
+.basket-ico {
+	transform: translateY(5px);
+}
+
+.price {
+	text-decoration: underline;
+
+	&:after {
+		content: 'р.';
+		padding-left: 2px;
+	}
+}
+
+.item-value {
+	text-decoration: underline;
+}
