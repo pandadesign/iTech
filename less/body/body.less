@@ -1,0 +1,59 @@
+.body {
+	.wrapper();
+	.flex(space-between, flex-start, row);
+	padding-top: 30px;
+}
+
+.bestsellers {
+	.size(375px, 620px);
+}
+
+.slider {
+	.size(520px, 620px);
+}
+
+
+// search
+
+.search-form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.search-input {
+	.size(375px, 40px);
+	border: 3px solid @borderColor;
+	font-size: @fSize + 6px;
+	padding: 0 50px 0 10px;
+	// Для позиционирования :after
+	position: relative;
+
+	&:after {
+		// Роль background-image
+		content: '';
+		display: block;
+		position: absolute;
+		
+		.size(40px, 40px);
+		background-color: @borderColor;
+		right: 0;
+		top: 0;
+	}
+}
+
+.search-submit {
+	
+	.size(120px, 40px);
+	color: @textColor;
+	background-color: @borderColor;
+	border: none;
+	font-size: @fSize + 6px;
+	transition: background-color .4s;
+
+	&:hover,
+	&:focus,
+	&:active {
+		cursor: pointer;
+		background-color: @hoverBg;
+	}
+}

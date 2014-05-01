@@ -1,0 +1,33 @@
+
+.size(@width, @height) {
+	width: @width;
+	height: @height;
+}
+
+
+.minWidth(@width, @minWidth: 0) {
+	width: @width;
+	min-width: @minWidth;
+}
+
+
+.minSize(@width, @height, @minWidth: 0) {
+	width: @width;
+	height: @height;
+	min-width: @minWidth;
+}
+
+
+.flex(@justify, @align, @direction: row) {
+	display: flex;
+	flex-direction: @direction;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+
+.wrapper(@width: 960px) {
+	width: @width;
+	margin: 0 auto;
+}
+

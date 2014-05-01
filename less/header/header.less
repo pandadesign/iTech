@@ -1,18 +1,18 @@
 .info {
-	background-color: $headerBg;
-	border-top: 3px solid $headerSeparator;
-	@include minWidth(100%, 960px);
+	background-color: @headerBg;
+	border-top: 3px solid @headerSeparator;
+	.minWidth(100%, 960px);
 }
 
 .info-list {
-	@include wrapper();
+	.wrapper();
 	overflow: auto;
 	padding: 20px 0;
-	color: $headerText;
+	color: @headerText;
 }
 
 .info-item {
-	@include size(25%, 60px);
+	.size(25%, 60px);
 	float: left;
 	border-right: 1px solid #fff;
 	display: flex;
@@ -26,22 +26,22 @@
 }
 
 .info-number {
-	color: $headerText;
-	font-size: $fSize + 4px;
+	color: @headerText;
+	font-size: @fSize + 4px;
 }
 
 // child
 
 .logo {
 	text-indent: -9999px;
-	@include size(153px, 60px);
+	.size(153px, 60px);
 	background: url(../img/logo.png) no-repeat;
 	background-size: cover;
 }
 
 .info-basket {
-	color: $headerText;
-	font-size: $fSize + 4px;
+	color: @headerText;
+	font-size: @fSize + 4px;
 }
 
 .info-item__basket {
