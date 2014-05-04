@@ -308,15 +308,159 @@
 			<p class="subscribe-description">Чтобы быть в курсе<br>
 			<span class="text-description" data-description="Самые последние акции на товары! А акции у нас часто!">акций*</span> и <span class="text-description" data-description="Все сведения о распродажах на вашу почту! Будьте в курсе!">распродаж*</span></p>
 			<form action="">
-				<input type="email" placeholder="denis@rambler.ru" class="subscribe-email" id="subscribe-email" pattern="^[-a-z0-9!#$%&'*+/=?^_`{|}~]+(?:\.[-a-z0-9!#$%&'*+/=?^_`{|}~]+)*@(?:[a-z0-9]([-a-z0-9]{0,61}[a-z0-9])?\.)*(?:aero|arpa|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|[a-z][a-z])$">
+				<input type="email" placeholder="denis@rambler.ru" class="subscribe-email" id="subscribe-email" pattern="^[-a-z0-9!#$%&amp;'*+/=?^_`{|}~]+(?:\.[-a-z0-9!#$%&amp;'*+/=?^_`{|}~]+)*@(?:[a-z0-9]([-a-z0-9]{0,61}[a-z0-9])?\.)*(?:aero|arpa|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|[a-z][a-z])$">
 				<label for="subscribe-email" class="subscribe-email__description">Введите ваш почтовый адрес</label>
-				<input type="text" placeholder="Денис Дмитриевич" class="subscribe-name" pattern="/(\w|\s|[\.\'-])+/">
+				<input type="text" placeholder="Денис Дмитриевич" class="subscribe-name" pattern="/(\w|\s|[\.\'-])+/" id="subscribe-name">
 				<label for="subscribe-name" class="subscribe-name__description">Введите ваше имя и фамилию</label>
 				<span class="subscribe-warning">Мы не рассылаем спам ;)</span>
 				<input type="submit" value="Подписаться" class="subscribe-submit">
 			</form>
 		</article>
 	</div>
+
+	<section class="stock">
+		<h6 class="stock-title">Товары по <span class="stock-action">акции</span></h6>
+		<button class="slider-arrow stock-control__left">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_37" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+					<path d="M438.627,201.373l-160-160c-12.496-12.497-32.757-12.497-45.254,0l-160,160c-12.497,12.497-12.497,32.758,0,45.255  c12.497,12.498,32.758,12.498,45.255,0L224,141.255V448c0,17.673,14.327,32,32,32s32-14.327,32-32V141.255l105.373,105.373  C399.621,252.876,407.811,256,416,256s16.379-3.124,22.627-9.373C451.124,234.13,451.124,213.87,438.627,201.373z"/>
+					</svg>
+		</button>
+		<button class="slider-arrow stock-control__right">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_19" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+					<path d="M438.627,201.373l-160-160c-12.496-12.497-32.757-12.497-45.254,0l-160,160c-12.497,12.497-12.497,32.758,0,45.255  c12.497,12.498,32.758,12.498,45.255,0L224,141.255V448c0,17.673,14.327,32,32,32s32-14.327,32-32V141.255l105.373,105.373  C399.621,252.876,407.811,256,416,256s16.379-3.124,22.627-9.373C451.124,234.13,451.124,213.87,438.627,201.373z"/>
+					</svg>
+		</button>
+		<div class="stock-carousel">
+			<div class="stock-item-holder">
+				<div class="stock-item">
+					<a href="#" class="stock-img-holder" title="25 Notebook PLR Articles Package - PLR Titan">
+						<img src="../img/content/3.jpg" alt="25 Notebook PLR Articles Package - PLR Titan" class="stock-img">
+					</a>
+					<a href="#" class="stock-name" title="Ноутбук ASUS X550LC-XO074H">Ноутбук ASUS X550LC-XO074H</a>
+					<p class="stock-price">
+						<span class="stock-price__last">23 999 р.</span>
+						<span class="stock-price__new">20 000 р.</span>
+					</p>
+					<button class="stock-add">Купить</button>
+				</div>
+				<div class="stock-item">
+					<a href="#" class="stock-img-holder" title="25 Notebook PLR Articles Package - PLR Titan">
+						<img src="../img/content/3.jpg" alt="25 Notebook PLR Articles Package - PLR Titan" class="stock-img">
+					</a>
+					<a href="#" class="stock-name" title="Ноутбук ASUS X550LC-XO074H">Ноутбук ASUS X550LC-XO074H</a>
+					<p class="stock-price">
+						<span class="stock-price__last">23 999 р.</span>
+						<span class="stock-price__new">20 000 р.</span>
+					</p>
+					<button class="stock-add">Купить</button>
+				</div>
+				<div class="stock-item">
+					<a href="#" class="stock-img-holder" title="25 Notebook PLR Articles Package - PLR Titan">
+						<img src="../img/content/3.jpg" alt="25 Notebook PLR Articles Package - PLR Titan" class="stock-img">
+					</a>
+					<a href="#" class="stock-name" title="Ноутбук ASUS X550LC-XO074H">Ноутбук ASUS X550LC-XO074H</a>
+					<p class="stock-price">
+						<span class="stock-price__last">23 999 р.</span>
+						<span class="stock-price__new">20 000 р.</span>
+					</p>
+					<button class="stock-add">Купить</button>
+				</div>
+				<div class="stock-item">
+					<a href="#" class="stock-img-holder" title="25 Notebook PLR Articles Package - PLR Titan">
+						<img src="../img/content/3.jpg" alt="25 Notebook PLR Articles Package - PLR Titan" class="stock-img">
+					</a>
+					<a href="#" class="stock-name" title="Ноутбук ASUS X550LC-XO074H">Ноутбук ASUS X550LC-XO074H</a>
+					<p class="stock-price">
+						<span class="stock-price__last">23 999 р.</span>
+						<span class="stock-price__new">20 000 р.</span>
+					</p>
+					<button class="stock-add">Купить</button>
+				</div>
+				<div class="stock-item">
+					<a href="#" class="stock-img-holder" title="25 Notebook PLR Articles Package - PLR Titan">
+						<img src="../img/content/3.jpg" alt="25 Notebook PLR Articles Package - PLR Titan" class="stock-img">
+					</a>
+					<a href="#" class="stock-name" title="Ноутбук ASUS X550LC-XO074H">Ноутбук ASUS X550LC-XO074H</a>
+					<p class="stock-price">
+						<span class="stock-price__last">23 999 р.</span>
+						<span class="stock-price__new">20 000 р.</span>
+					</p>
+					<button class="stock-add">Купить</button>
+				</div>
+				<div class="stock-item">
+					<a href="#" class="stock-img-holder" title="25 Notebook PLR Articles Package - PLR Titan">
+						<img src="../img/content/3.jpg" alt="25 Notebook PLR Articles Package - PLR Titan" class="stock-img">
+					</a>
+					<a href="#" class="stock-name" title="Ноутбук ASUS X550LC-XO074H">Ноутбук ASUS X550LC-XO074H</a>
+					<p class="stock-price">
+						<span class="stock-price__last">23 999 р.</span>
+						<span class="stock-price__new">20 000 р.</span>
+					</p>
+					<button class="stock-add">Купить</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="banner" role="banner">
+		<a href="#" class="banner-link">
+			<img src="../img/banner.png" alt="Samsung Galaxy s3 , всего за 10.400р. !" class="banner-img">
+		</a>
+	</div>
+
+	<section class="review">
+		<h6 class="review-title">О нас говорят</h6>
+		<p class="review-author">
+			<a href="https://twitter.com/bonkalol" target="_blank" rel="author" class="review-twitter" title="Перейти в твиттер bonkalol">bonkalol</a>
+			твитнул:
+		</p>
+		<div class="review-quote">
+			<button class="slider-arrow review-control__left">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_39" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+					<path d="M438.627,201.373l-160-160c-12.496-12.497-32.757-12.497-45.254,0l-160,160c-12.497,12.497-12.497,32.758,0,45.255  c12.497,12.498,32.758,12.498,45.255,0L224,141.255V448c0,17.673,14.327,32,32,32s32-14.327,32-32V141.255l105.373,105.373  C399.621,252.876,407.811,256,416,256s16.379-3.124,22.627-9.373C451.124,234.13,451.124,213.87,438.627,201.373z"/>
+					</svg>
+			</button>
+			<button class="slider-arrow review-control__right">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_12" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+							<path d="M438.627,201.373l-160-160c-12.496-12.497-32.757-12.497-45.254,0l-160,160c-12.497,12.497-12.497,32.758,0,45.255  c12.497,12.498,32.758,12.498,45.255,0L224,141.255V448c0,17.673,14.327,32,32,32s32-14.327,32-32V141.255l105.373,105.373  C399.621,252.876,407.811,256,416,256s16.379-3.124,22.627-9.373C451.124,234.13,451.124,213.87,438.627,201.373z"/>
+							</svg>
+			</button>
+			<q class="review-item">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.</q>
+			<q class="review-item">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.</q>
+			<q class="review-item">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.</q>
+			<q class="review-item">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.</q>
+			<q class="review-item">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.</q>
+		</div>
+	</section>
+
+	<footer class="page-footer">
+		<div class="menu">
+			<ul class="menu-column">
+				<li class="menu-item"><a href="#" class="menu-link">Помощь покупателю</a>
+				<li class="menu-item"><a href="#" class="menu-link">Оплата</a>
+				<li class="menu-item"><a href="#" class="menu-link">Доставка</a>
+				<li class="menu-item"><a href="#" class="menu-link">Самовывоз</a>
+				<li class="menu-item"><a href="#" class="menu-link">Поможем выбрать</a>
+				<li class="menu-item"><a href="#" class="menu-link">Как сделать заказ</a>
+			</ul>
+			<ul class="menu-column">
+				<li class="menu-item"><a href="#" class="menu-link">Информация для покупателя</a>
+				<li class="menu-item"><a href="#" class="menu-link">Обмен и возврат</a>
+				<li class="menu-item"><a href="#" class="menu-link">Сервисная служба</a>
+				<li class="menu-item"><a href="#" class="menu-link">Наши гарантии</a>
+				<li class="menu-item"><a href="#" class="menu-link">Кредит</a>
+				<li class="menu-item"><a href="#" class="menu-link">Условия покупки в интернете</a>
+			</ul>
+			<ul class="menu-column">
+				<li class="menu-item"><a href="#" class="menu-link">О компании</a>
+				<li class="menu-item"><a href="#" class="menu-link">Реклама на сайте</a>
+				<li class="menu-item"><a href="#" class="menu-link">Арендаторам</a>
+				<li class="menu-item"><a href="#" class="menu-link">Социальная ответственность</a>
+				<li class="menu-item"><a href="#" class="menu-link">Контакты</a>
+			</ul>
+		</div>
+		<span class="copyright">Copyright © iTech, 2014, All rights reserved</span>
+	</footer>
 
 </body>
 </html>

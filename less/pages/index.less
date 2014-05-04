@@ -482,3 +482,296 @@
 .subscribe-name__description {
 	&:extend(.subscribe-email__description);
 }
+
+
+.stock {
+	.wrapper();
+	border: 3px solid @borderColor;
+	margin-top: 50px;
+	background-color: #fff;
+	position: relative;
+}
+
+.stock-title {
+	font-size: 30px;
+	color: @blueText;
+	padding: 25px 0;
+	text-align: center;
+	font-weight: 400;
+}
+
+.stock-action {
+	text-decoration: underline;
+}
+
+.stock-carousel {
+	overflow-x: scroll;
+	padding: 0 50px 30px;
+}
+
+.stock-item-holder {
+	display: inline-block;
+	width: 9999px;
+	overflow: hidden;
+	padding-right: 50px;
+}
+
+.stock-item {
+	display: inline-block;
+	.size(160px, 275px);
+	margin-right: 65px;
+
+	&:first-child {
+		margin-left: 5px;
+	}
+}
+
+.stock-img-holder {
+	.size(160px, 160px);
+	border: 3px solid @borderColor;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+
+	&:hover,
+	&:focus,
+	&:active {
+
+		.stock-img {
+			transform: scale(1.1);
+		}
+
+	}
+}
+
+.stock-img {
+	max-height: 100%;
+	max-width: 150px;
+	transition: transform ease-in-out .2s;
+}
+
+.stock-name {
+	color: @blueText;
+	text-decoration: underline;
+	display: inline-block;
+	text-align: center;
+	margin-top: 10px;
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+	}
+}
+
+.stock-add {
+	display: block;
+	.size(160px, 35px);
+	color: #fff;
+	background-color: @lightGreen;
+	font-size: 20px;
+	transition: background-color .4s;
+
+	&:hover,
+	&:focus {
+		cursor: pointer;
+		background-color: darken(@lightGreen, 10%);
+	}
+
+	&:active {
+		box-shadow: inset 0 3px 4px rgba(0,0,0,.4);
+		background-color: darken(@lightGreen, 10%);
+	}
+}
+
+.stock-price {
+	display: flex;
+	.size(100%, auto);
+	justify-content: space-between;
+	padding: 5px 10px;
+}
+
+.stock-price__last {
+	position: relative;
+
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 5px;
+		width: 100%;
+		border: 1px solid rgba(255, 0, 0, .6);
+		transform-origin: right;
+		transform: rotate(-8deg);
+	}
+
+}
+
+.stock-price__new {
+	color: #2ecc71;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+.stock-control__left {
+	left: 10px;
+	top: 150px;
+	transform: rotate(-90deg);
+	background-color: #fff;
+}
+
+.stock-control__right {
+	right: 10px;
+	top: 150px;
+	transform: rotate(90deg);
+	background-color: #fff;
+}
+
+.review {
+	.wrapper();
+	border: 3px solid @borderColor;
+	background-color: @borderColor;
+	color: @textColor;
+	text-align: center;
+	padding-bottom: 60px;
+	overflow: hidden;
+}
+
+.review-title {
+	font-size: 30px;
+	padding: 20px 0 40px;
+}
+
+
+.review-author {
+	font-size: 18px;
+}
+
+.review-twitter {
+	color: #fff;
+	text-decoration: underline;
+
+	&:before {
+		content: '@';
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+	}
+}
+
+.review-quote {
+	overflow: hidden;
+	margin-top: 20px;
+	height: 115px;
+	padding: 0 87px;
+	width: 3000px;
+	position: relative;
+}
+
+.review-item {
+	display: inline-block;
+	line-height: 28px;
+	font-size: 18px;
+	width: 780px;
+	float: left;
+	margin-right: 87px;
+}
+
+
+.review-control__right {
+	left: 910px;
+	top: 25px;
+	border-color: #fff;
+	transform: rotate(90deg);
+	transition: all ease-in-out .3s;
+
+	svg {
+		fill: #fff;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		border-color: #333;
+		background-color: #fff;
+
+		svg {
+			fill: #333;
+		}
+	}
+}
+
+.review-control__left {
+	left: 15px;
+	top: 25px;
+	border-color: #fff;
+	transform: rotate(-90deg);
+	transition: all ease-in-out .3s;
+
+	svg {
+		fill: #fff;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		border-color: #333;
+		background-color: #fff;
+
+		svg {
+			fill: #333;
+		}
+	}
+}
+
+.page-footer {
+	.minWidth(100%, 960px);
+	background-color: #e6e8e9;
+	margin-top: 50px;
+}
+
+.menu {
+	.wrapper();
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu-item {
+
+	&:first-child {
+		margin-bottom: 12px;
+
+		.menu-link {
+			font-weight: bold;
+		}
+	}
+}
+
+.menu-link {
+	display: inline-block;
+	padding-bottom: 5px;
+	color: #565656;
+
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: underline;
+	}
+}
+
+.copyright {
+	display: block;
+	color: #fff;
+	padding: 7px 0;
+	text-align: center;
+	font-size: 18px;
+	background-color: #333;
+}
