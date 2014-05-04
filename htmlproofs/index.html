@@ -304,7 +304,17 @@
 			</footer>
 		</section>
 		<article class="about-subscribe">
-			
+			<h5 class="subscribe-title">Подписывайтесь на нас</h5>
+			<p class="subscribe-description">Чтобы быть в курсе<br>
+			<span class="text-description" data-description="Самые последние акции на товары! А акции у нас часто!">акций*</span> и <span class="text-description" data-description="Все сведения о распродажах на вашу почту! Будьте в курсе!">распродаж*</span></p>
+			<form action="">
+				<input type="email" placeholder="denis@rambler.ru" class="subscribe-email" id="subscribe-email" pattern="^[-a-z0-9!#$%&'*+/=?^_`{|}~]+(?:\.[-a-z0-9!#$%&'*+/=?^_`{|}~]+)*@(?:[a-z0-9]([-a-z0-9]{0,61}[a-z0-9])?\.)*(?:aero|arpa|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|[a-z][a-z])$">
+				<label for="subscribe-email" class="subscribe-email__description">Введите ваш почтовый адрес</label>
+				<input type="text" placeholder="Денис Дмитриевич" class="subscribe-name" pattern="/(\w|\s|[\.\'-])+/">
+				<label for="subscribe-name" class="subscribe-name__description">Введите ваше имя и фамилию</label>
+				<span class="subscribe-warning">Мы не рассылаем спам ;)</span>
+				<input type="submit" value="Подписаться" class="subscribe-submit">
+			</form>
 		</article>
 	</div>
 
